@@ -1,9 +1,11 @@
-
+import { useState } from "react"
 const FeedbackItem = () => {
+  const[rating,SetRating] =useState(7);
+  const [text, setText] = useState('lorem ipsum dolor sit amet')
   return (
     <div className="card">FeedbackItem
-    <div className="num-display">10</div>
-    <div className="text-display">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    <div className="num-display">{rating}</div>
+    <div className="text-display">{text}</div>
     </div>
   )
 }
